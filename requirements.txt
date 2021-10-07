@@ -4,7 +4,8 @@ Django==3.2
 #sudo apt-get install python3-dev default-libmysqlclient-dev
 #mysqlclient==2.0.3
 python-dateutil==2.8.1
-#psycopg2-binary==2.8.6
+psycopg2-binary==2.9.1
+gunicorn==20.1.0
 #Pillow==8.1.2
 #sudo apt-get install apache2-dev
 #mod_wsgi==4.7.1

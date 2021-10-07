@@ -1,20 +1,24 @@
 {
-    "active_db": "",
-    "env": "prod",
-    "local": "",
-    "site_name": "eng",
-    "postgresql": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "eng",
-        "USER": "jang",
-        "PASSWORD": "123"
-    },
-    "ALLOWED_HOSTS": ["growingvision.co","growingvision.co", "18.119.124.91"],
-    "mysql": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "eng",
-        "USER": "root",
-        "PASSWORD": "123"
-    },
-    "site_url": "https://www.growingvision.co"
+  "active_db": "",
+  "env": "dev",
+  "local": "",
+  "site_name": "eng",
+  "postgresql": {
+    "ENGINE": "django.db.backends.postgresql",
+    "NAME": "eng",
+    "USER": "jang",
+    "PASSWORD": "123"
+  },
+  "ALLOWED_HOSTS": [
+    "www.growingvision.co",
+    "growingvision.co",
+    "18.119.124.91"
+  ],
+  "mysql": {
+    "ENGINE": "django.db.backends.mysql",
+    "NAME": "eng",
+    "USER": "root",
+    "PASSWORD": "123"
+  },
+  "site_url": "https://www.growingvision.co"
 }
