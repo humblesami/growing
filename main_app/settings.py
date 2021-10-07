@@ -155,7 +155,6 @@ with open(config_path, 'r') as site_config:
         ALLOWED_HOSTS = ['*']
     if env_type == 'dev':
         DEBUG = True
-        ALLOWED_HOSTS = ['*']
     else:
         ALLOWED_HOSTS = ALLOWED_HOSTS
         DEBUG = False

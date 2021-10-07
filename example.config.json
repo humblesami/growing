@@ -1,0 +1,30 @@
+{
+    "active_db": "",
+    "env": "dev",
+    "local": "",
+    "site_name": "eng",
+    "postgresql": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "eng",
+        "USER": "jang",
+        "PASSWORD": "123"
+    },
+    "ALLOWED_HOSTS": ["growingvision.co"],
+    "mysql": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "eng",
+        "USER": "root",
+        "PASSWORD": "123"
+    },
+    "site_url": "https://www.growingvision.co",
+    "post_image": {
+        "urdu": {
+            "BASE_URL": "http://urdu.92newshd.tv/",
+            "BASE_DIR": "aur.92newshd.tv/"
+        },
+        "eng": {
+            "BASE_URL": "http://92newshd.tv/",
+            "BASE_DIR": "eng/"
+        }
+    }
+}
