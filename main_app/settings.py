@@ -150,14 +150,15 @@ SITE_URL = 'http://localhost:8000'
 with open(config_path, 'r') as site_config:
     config_info = json.load(site_config)
     env_type = config_info.get('env')
-    if config_info.get('local'):
-        LOCALHOST = True
-        ALLOWED_HOSTS = ['*']
     if env_type == 'dev':
         DEBUG = True
     else:
-        ALLOWED_HOSTS = ALLOWED_HOSTS
         DEBUG = False
+    if config_info.get('local'):
+        LOCALHOST = True
+        ALLOWED_HOSTS = ['*']
+    else:
+        ALLOWED_HOSTS = config_info.get('ALLOWED_HOSTS')
     active_db = config_info.get('active_db')
     if active_db:
         db_config = config_info.get(active_db)

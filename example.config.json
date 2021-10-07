@@ -1,6 +1,6 @@
 {
     "active_db": "",
-    "env": "dev",
+    "env": "prod",
     "local": "",
     "site_name": "eng",
     "postgresql": {
