@@ -1,4 +1,52 @@
 https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-18-04
 
 sudo apt update
-sudo apt install python-pip python-dev libpq-dev postgresql postgresql-contrib nginx curl
+sudo apt install python3-pip python3-venv gunicorn daemon libpq-dev postgresql postgresql-contrib nginx curl
+
+#for working with docs
+sudo apt install -y unoconv
+
+sudo nano /etc/postgresql/12/main/pg_hba.conf
+local   all     all     peer
+local   all     all     pmd5
+
+
+sudo chown -R www-data:www-data /var/www/growing
+sudo chmod -R 777 /var/www/growing
+
+Install Packages:
+python3 -m /path/to/pyenvs/env1
+source /path/to/pyenvs/env1/bin/activate
+sudo pip install -r requirements.txt
+
+---------------------------------
+Configuration
+nano config.json
+{
+  "active_db": "",
+  "env": "dev",
+  "local": "",
+  "site_name": "eng",
+  "postgresql": {
+    "ENGINE": "django.db.backends.postgresql",
+    "NAME": "eng",
+    "USER": "jang",
+    "PASSWORD": "123"
+  },
+  "ALLOWED_HOSTS": [
+    "www.growingvision.co",
+    "growingvision.co",
+    "18.119.124.91"
+  ],
+  "mysql": {
+    "ENGINE": "django.db.backends.mysql",
+    "NAME": "eng",
+    "USER": "root",
+    "PASSWORD": "123"
+  },
+  "site_url": "https://www.growingvision.co"
+}
+
+Migrations:
+python3 manage.py makemigrations
+python3 manage.py migrate

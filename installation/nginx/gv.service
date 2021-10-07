@@ -5,7 +5,7 @@ Requires=gv.socket
 After=network.target
 
 [Service]
-User=ubuntu
+User=www-data
 Group=www-data
 WorkingDirectory=/var/www/growing
 ExecStart=/var/www/pyenv/growing/bin/gunicorn \
