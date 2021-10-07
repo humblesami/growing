@@ -1,0 +1,9 @@
+#/etc/systemd/system/gv.socket
+[Unit]
+Description=gunicorn socket
+
+[Socket]
+ListenStream=/run/gv.sock
+
+[Install]
+WantedBy=sockets.target

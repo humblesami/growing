@@ -1,9 +1,0 @@
-#/etc/systemd/system/gunicorn.socket
-[Unit]
-Description=gunicorn socket for nginx
-
-[Socket]
-ListenStream=/run/gunicorn.sock
-
-[Install]
-WantedBy=sockets.target

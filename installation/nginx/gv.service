@@ -1,17 +1,16 @@
-#/etc/systemd/system/gunicorn.service
+#/etc/systemd/system/gv.service
 [Unit]
 Description=gunicorn daemon for growingvision
-Requires=gunicorn.socket
+Requires=gv.socket
 After=network.target
 
 [Service]
-User=www-data
+User=ubuntu
 Group=www-data
 WorkingDirectory=/var/www/growing
 ExecStart=/var/www/pyenv/growing/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
-          --bind unix:/run/gunicorn.sock \
           main_app.wsgi:application
 
 [Install]
