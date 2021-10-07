@@ -9,22 +9,12 @@
         "USER": "jang",
         "PASSWORD": "123"
     },
-    "ALLOWED_HOSTS": ["growingvision.co"],
+    "ALLOWED_HOSTS": ["growingvision.co","growingvision.co", "18.119.124.91"],
     "mysql": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "eng",
         "USER": "root",
         "PASSWORD": "123"
     },
-    "site_url": "https://www.growingvision.co",
-    "post_image": {
-        "urdu": {
-            "BASE_URL": "http://urdu.92newshd.tv/",
-            "BASE_DIR": "aur.92newshd.tv/"
-        },
-        "eng": {
-            "BASE_URL": "http://92newshd.tv/",
-            "BASE_DIR": "eng/"
-        }
-    }
+    "site_url": "https://www.growingvision.co"
 }

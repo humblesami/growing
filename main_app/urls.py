@@ -21,9 +21,8 @@ site_urls = [
 ]
 
 
-@login_required
 def home_view(request):
-    html = '<div><h3>Home Page</h3> <a href="/admin">Admin</a> <a href="/ajax/news/add-draft-slug/">Draft</a></div>'
+    html = '<div><h3>Home Page</h3> <a href="/admin">Admin</a></div>'
     res = HttpResponse(html)
     return res
 
