@@ -1,0 +1,216 @@
+[
+  {
+    "model": "news.homepagesections",
+    "pk": 1,
+    "fields": {
+        "name": "breaking news",
+        "post_count": 0,
+        "created_at": null,
+        "updated_at": null
+    }
+  },
+  {
+      "model": "news.homepagesections",
+      "pk": 2,
+      "fields": {
+          "name": "editors choice",
+          "post_count": 0,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.homepagesections",
+      "pk": 3,
+      "fields": {
+          "name": "must read",
+          "post_count": 0,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.homepagesections",
+      "pk": 4,
+      "fields": {
+          "name": "top trending",
+          "post_count": 0,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.homepagesections",
+      "pk": 5,
+      "fields": {
+          "name": "news healines",
+          "post_count": 0,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.homepagesections",
+      "pk": 6,
+      "fields": {
+          "name": "latest stories",
+          "post_count": 0,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.tag",
+      "pk": 1,
+      "fields": {
+          "name": "Pakistan",
+          "slug": "pakistan",
+          "en_slug": null,
+          "slug_decoded": 1,
+          "site_mapped": null,
+          "trending": false,
+          "is_hash_tag": false,
+          "is_category": true,
+          "show_in_top_nav": true,
+          "post_count": 0,
+          "priority": 0,
+          "merged_to": null,
+          "created_by": null,
+          "updated_by": null,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.tag",
+      "pk": 2,
+      "fields": {
+          "name": "World",
+          "slug": "world",
+          "en_slug": null,
+          "slug_decoded": 1,
+          "site_mapped": null,
+          "trending": false,
+          "is_hash_tag": false,
+          "is_category": true,
+          "show_in_top_nav": true,
+          "post_count": 0,
+          "priority": 0,
+          "merged_to": null,
+          "created_by": null,
+          "updated_by": null,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.tag",
+      "pk": 3,
+      "fields": {
+          "name": "Sports",
+          "slug": "sports",
+          "en_slug": null,
+          "slug_decoded": 1,
+          "site_mapped": null,
+          "trending": false,
+          "is_hash_tag": true,
+          "is_category": true,
+          "show_in_top_nav": false,
+          "post_count": 0,
+          "priority": 0,
+          "merged_to": null,
+          "created_by": null,
+          "updated_by": null,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.tag",
+      "pk": 4,
+      "fields": {
+          "name": "Business",
+          "slug": "business",
+          "en_slug": null,
+          "slug_decoded": 1,
+          "site_mapped": null,
+          "trending": false,
+          "is_hash_tag": false,
+          "is_category": true,
+          "show_in_top_nav": true,
+          "post_count": 0,
+          "priority": 0,
+          "merged_to": null,
+          "created_by": null,
+          "updated_by": null,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.tag",
+      "pk": 5,
+      "fields": {
+          "name": "Entertainment",
+          "slug": "entertainment",
+          "en_slug": null,
+          "slug_decoded": 1,
+          "site_mapped": null,
+          "trending": false,
+          "is_hash_tag": false,
+          "is_category": true,
+          "show_in_top_nav": true,
+          "post_count": 0,
+          "priority": 0,
+          "merged_to": null,
+          "created_by": null,
+          "updated_by": null,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.tag",
+      "pk": 6,
+      "fields": {
+          "name": "Technology",
+          "slug": "technology",
+          "en_slug": null,
+          "slug_decoded": 1,
+          "site_mapped": null,
+          "trending": false,
+          "is_hash_tag": false,
+          "is_category": true,
+          "show_in_top_nav": true,
+          "post_count": 0,
+          "priority": 0,
+          "merged_to": null,
+          "created_by": null,
+          "updated_by": null,
+          "created_at": null,
+          "updated_at": null
+      }
+  },
+  {
+      "model": "news.tag",
+      "pk": 7,
+      "fields": {
+          "name": "Health",
+          "slug": "health",
+          "en_slug": null,
+          "slug_decoded": 1,
+          "site_mapped": null,
+          "trending": false,
+          "is_hash_tag": false,
+          "is_category": true,
+          "show_in_top_nav": true,
+          "post_count": 0,
+          "priority": 0,
+          "merged_to": null,
+          "created_by": null,
+          "updated_by": null,
+          "created_at": null,
+          "updated_at": null
+      }
+  }
+]

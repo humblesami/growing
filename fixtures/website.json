@@ -1,0 +1,22 @@
+[
+  {
+      "model": "website.usertimezone",
+      "pk": 1,
+      "fields": {
+          "user": [
+              "sa"
+          ],
+          "timezone": null
+      }
+  },
+  {
+      "model": "website.usertimezone",
+      "pk": 2,
+      "fields": {
+          "user": [
+              "content.manager@92newshd.tv"
+          ],
+          "timezone": null
+      }
+  }
+]
