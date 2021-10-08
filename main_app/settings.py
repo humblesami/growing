@@ -174,10 +174,38 @@ ALLOW_UNICODE_SLUGS = True
 
 LOGIN_URL = '/admin/login/'
 
-MIDDLEWARE = MIDDLEWARE + [
-    'website.middleware.TimezoneMiddleware',
-    'website.response_handler.ExceptionMiddleware'
-]
+# MIDDLEWARE = MIDDLEWARE + [
+#     'website.middleware.TimezoneMiddleware',
+#     'website.response_handler.ExceptionMiddleware'
+# ]
+
+site_base_styles = ['website/css/site.css']
+admin_base_styles = ['admin/css/base.css']
+base_scripts = ['website/js/web_utils.js']
+PIPELINE = {
+    'STYLESHEETS': {
+        "site_home":{
+
+        },
+        'post_detail': {
+            'source_filenames':  site_base_styles + ['news/css/post_detail.css'],
+            'output_filename': 'css/post.css',
+        },
+        "admin_base":{
+
+        },
+        "admin_list":{
+
+        }
+    },
+    'JAVASCRIPT': {
+        'site_base': {
+            'source_filenames': base_scripts + [],
+            'output_filename': 'js/stats.js',
+        }
+    }
+}
+
 # REST_FRAMEWORK = {
 #     "DEFAULT_AUTHENTICATION_CLASSES": (
 #         "rest_framework.authentication.TokenAuthentication",

@@ -1,5 +1,6 @@
 import os
 import glob
+from pathlib import Path
 
 
 def remove_migrations():
@@ -16,7 +17,7 @@ def remove_migrations():
 
 
 def remove_file_by_extension(ext):
-    sub_res = glob.glob('/**/*.' + ext)
+    sub_res = Path('.').glob('**/*.'+ext)
     cnt = 0
     for file_path in sub_res:
         os.remove(file_path)
@@ -26,4 +27,5 @@ def remove_file_by_extension(ext):
 
 # remove_migrations()
 remove_file_by_extension('pyc')
+remove_file_by_extension('po')
 print('done')
