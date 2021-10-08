@@ -1,5 +1,6 @@
 requests==2.25.1
 Django==3.2
+django-pipeline==2.0.6
 #djangorestframework==3.12.2
 #sudo apt-get install python3-dev default-libmysqlclient-dev
 #mysqlclient==2.0.3
